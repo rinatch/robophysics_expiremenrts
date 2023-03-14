@@ -1,0 +1,1113 @@
+2.00.01
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="Number" id="noJA}tf_q5!VT4mmb!MH">angle0Left</variable>
+    <variable type="Number" id="!Q(J$Qk[5nSeNVPN1~5x">t0</variable>
+    <variable type="Number" id="]()ai146Sj_ER6Om%(Nq">leftpower</variable>
+    <variable type="Number" id="!/S2bBvuhJa1Jbj`b];!">accPower</variable>
+    <variable type="Number" id="ErZV(%A:J4QNG1e$ocWl">ppL</variable>
+    <variable type="Number" id="tD`2qXz:=5-Z,2}eaU`A">wanted V</variable>
+    <variable type="Number" id="[](u6p/Xro5MSd//suly">angularVleft</variable>
+    <variable type="Number" id="Z7lA{Luh1Q~E8g2/f_0;">ppR</variable>
+    <variable type="Number" id="hypr;$boEi~y*pF]TT(9">U</variable>
+    <variable type="Number" id="#i?R;ZT.#E7lt-H=zzVu">angularVright</variable>
+    <variable type="Number" id="((2R`k+0%S9g*+_n|0c%">angle0Right</variable>
+    <variable type="Number" id="LxrM+~,:#sX/P$+wN!Z5">rightpower</variable>
+    <variable type="Number" id="vZv/zRwQDsUojFUYI~g3">t1</variable>
+    <variable type="Number" id="[ETC-Zy78kuQ^N1{=H{]">V</variable>
+    <variable type="Number" id="o~.3FlRKqq68y$6NZWSI">vLeft</variable>
+    <variable type="Number" id="Tvk}|CV:vFI`8p:YbBEX">vRight</variable>
+  </variables>
+  <block type="procedures_defnoreturn" id="StGhmd_+J800JUdpd!.S" collapsed="true" x="15" y="-1215">
+    <field name="NAME">reset values</field>
+    <statement name="STACK">
+      <block type="my_variables_set_dynamic" id="OW.AH%w{:Y#Qy{1xDU9|">
+        <mutation blockstyle="Number"></mutation>
+        <field name="VAR" id="noJA}tf_q5!VT4mmb!MH" variabletype="Number">angle0Left</field>
+        <value name="VALUE">
+          <shadow type="math_number" id="PP6c0e8DiOC,U`65}GA1" inline="true">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="my_variables_set_dynamic" id="r)B)K9*~#To:O5/IVY/z">
+            <mutation blockstyle="Number"></mutation>
+            <field name="VAR" id="ErZV(%A:J4QNG1e$ocWl" variabletype="Number">ppL</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="I:SUyxU{)zNowyZZxI{9" inline="true">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="my_variables_set_dynamic" id="rOt.hmhFvlapLtkk$?:Z">
+                <mutation blockstyle="Number"></mutation>
+                <field name="VAR" id="Z7lA{Luh1Q~E8g2/f_0;" variabletype="Number">ppR</field>
+                <value name="VALUE">
+                  <shadow type="math_number" id="/s^J|9::eX+?DjZPSZ9C" inline="true">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="my_variables_set_dynamic" id="*YNg7F%])~5gFxZ4Fq6,">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="((2R`k+0%S9g*+_n|0c%" variabletype="Number">angle0Right</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="y|+Z413/jcJDKJrRX^)`" inline="true">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="my_variables_set_dynamic" id="KH(3!(x0}vIwST,VPg|X">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                        <value name="VALUE">
+                          <shadow type="math_number" id=";TQ#kaF%IF=$CR,Y9JNk" inline="true">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="my_variables_set_dynamic" id="zR#,IfSjX2F?~rcj29rI">
+                            <mutation blockstyle="Number"></mutation>
+                            <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                            <value name="VALUE">
+                              <shadow type="math_number" id="|%bZ7Z@d`21o4L~qzZs!" inline="true">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="my_variables_set_dynamic" id="X40^FM+@y$BsuwHUkZ83">
+                                <mutation blockstyle="Number"></mutation>
+                                <field name="VAR" id="!/S2bBvuhJa1Jbj`b];!" variabletype="Number">accPower</field>
+                                <value name="VALUE">
+                                  <shadow type="math_number" id="P75,nl+_ag8e1@8_Lfgs" inline="true">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="my_variables_set_dynamic" id="^rjOMz(_%07P3_;8:kw}">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="vZv/zRwQDsUojFUYI~g3" variabletype="Number">t1</field>
+                                    <value name="VALUE">
+                                      <shadow type="math_number" id="|?BUv$(!Oy/$3r?d9!^S" inline="true">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="my_variables_set_dynamic" id="Pej!cCy$!htr}5I=IPVK">
+                                        <mutation blockstyle="Number"></mutation>
+                                        <field name="VAR" id="[](u6p/Xro5MSd//suly" variabletype="Number">angularVleft</field>
+                                        <value name="VALUE">
+                                          <shadow type="math_number" id="u1lIhMrE}Lu($UREz*gi" inline="true">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="my_variables_set_dynamic" id="bZXiJ;9z9x$B_d!A|W,Y">
+                                            <mutation blockstyle="Number"></mutation>
+                                            <field name="VAR" id="#i?R;ZT.#E7lt-H=zzVu" variabletype="Number">angularVright</field>
+                                            <value name="VALUE">
+                                              <shadow type="math_number" id="id/W,?[opi`|a2:|Mq}=" inline="true">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="write_DB" id="OfoXY|o5(Qjxc1Agy#6k">
+                                                <value name="Value">
+                                                  <shadow type="math_number" id="_(hBj?#j^e|.v?.NODov" inline="true">
+                                                    <field name="NUM">0</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="Key">
+                                                  <shadow type="my_text" id="Q/%%m4Tm%s]2}%ELCLej" inline="true">
+                                                    <field name="TEXT">db/Lmotor/leftAngle</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="write_DB" id="wvXN8K2^Z//p1/c?i9gV">
+                                                    <value name="Value">
+                                                      <shadow type="math_number" id="41Wloh1bPsA=T`l@BFp*" inline="true">
+                                                        <field name="NUM">0</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="Key">
+                                                      <shadow type="my_text" id="C|%,I:pG-f#s|Q4b2/hi" inline="true">
+                                                        <field name="TEXT">db/Rmotor/rightAngle</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="write_DB" id="GhC:Bo7cZZhShtWbI#GC">
+                                                        <value name="Value">
+                                                          <shadow type="math_number" id="7voiQsQFk=cO@sG[b!Ki" inline="true">
+                                                            <field name="NUM">0</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="Key">
+                                                          <shadow type="my_text" id=")m}O?$r8=WM5r0~w5,Ao" inline="true">
+                                                            <field name="TEXT">db/Lmotor/leftAngleVelocity</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="write_DB" id="4r,eZw4cJln4+YF0R%{=">
+                                                            <value name="Value">
+                                                              <shadow type="math_number" id=")gF;f^cL}%nQ8`,w2l!W" inline="true">
+                                                                <field name="NUM">0</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="Key">
+                                                              <shadow type="my_text" id="9ci`.;Ay5)}pIh+,:Tl9" inline="true">
+                                                                <field name="TEXT">db/Rmotor/rightAngleVelocity</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <next>
+                                                              <block type="write_DB" id="EMeg_OE]%Kr[ID,c4/{I">
+                                                                <value name="Value">
+                                                                  <shadow type="math_number" id="[ai%GaI}!8bX-9j?Mg]b">
+                                                                    <field name="NUM">0</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="Key">
+                                                                  <shadow type="my_text" id="np@$1)+b.~hY?P9@NIh7" inline="true">
+                                                                    <field name="TEXT">db/time</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="reset_timer" id="EN9{B(lWcV(9j6z*t8OJ">
+                                                                    <field name="Timer">0</field>
+                                                                    <next>
+                                                                      <block type="write_DB" id="e/ZS,rct3m7x_F1w4]]}">
+                                                                        <value name="Value">
+                                                                          <shadow type="math_number" id="P4p9(.?y6lRA+DILhzE;">
+                                                                            <field name="NUM">0</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="Key">
+                                                                          <shadow type="my_text" id="TctXN)1c5Ek~@sgB!(TM">
+                                                                            <field name="TEXT">db/timeDiff</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="initiate_block" id="-=cl~eQ=WB*~p:k@#}-Y" inline="true" x="-915" y="-795">
+    <statement name="DO">
+      <block type="init_DB" id="^$Xs!=.#m/jRQm/zf$UM">
+        <value name="URLInput">
+          <shadow type="my_text" id="M9B,(S(eJBfkfy3]l{yE" inline="true">
+            <field name="TEXT">https://educational-robot-8140d-default-rtdb.europe-west1.firebasedatabase.app</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="motor_ports" id="~_/_{Q6y3.SZ+vB|s:uh">
+            <field name="Port1">B</field>
+            <field name="Port2">C</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="start_block" id="26Q_mx41kpay@K7hHN{u" inline="true" x="-1635" y="-735">
+    <field name="task_name">task1</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="g.*e`z9Ht@H~%MD2qpxx">
+        <mutation name="reset values"></mutation>
+        <next>
+          <block type="controls_whileUntilForever" id="zI=qi1NtRGKkgc{X0e@{">
+            <field name="MODE">UNTIL</field>
+            <value name="BOOL">
+              <shadow type="logic_boolean" id=":5tn(ZvZDptxy2-A~x=:">
+                <field name="BOOL">TRUE</field>
+              </shadow>
+              <block type="logic_compare" id="q~W.5jYjj8rfM?T@/;?F">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <shadow type="math_number" id="3`tm4FR2xrkZlIk:^_wE">
+                    <field name="NUM">20</field>
+                  </shadow>
+                  <block type="virtual_sensor_measure" id="x-0fe7/3Xycg:DM@cgC_">
+                    <field name="Sensor">Switches_Simple</field>
+                    <field name="Color">0</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="d8%97oqynaeOUYMG*ewK">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="procedures_callnoreturn" id="7W{w34(sE1:KJ57$dQ?+">
+                <mutation name="calculate v"></mutation>
+                <next>
+                  <block type="procedures_callnoreturn" id="fgep2rwV5XsDDn@7n49s">
+                    <mutation name="control motors"></mutation>
+                    <next>
+                      <block type="procedures_callnoreturn" id="Ud=3@0A+9Rjzx|Od+r,}">
+                        <mutation name="send data to FB"></mutation>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="medium_motor" id="GruCi^}5B:9o{4Yz!D*3">
+                <field name="mode">MMotorOff</field>
+                <field name="port">B</field>
+                <field name="brake">TRUE</field>
+                <next>
+                  <block type="medium_motor" id="8fUd2b@{)|y[r-zH.aSv">
+                    <field name="mode">MMotorOff</field>
+                    <field name="port">C</field>
+                    <field name="brake">TRUE</field>
+                    <next>
+                      <block type="procedures_callnoreturn" id="Z__#c7+dza,k{%7IH#0f">
+                        <mutation name="reset values"></mutation>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="ol1{n{g:@C2$UUK@?!Z@" x="-405" y="-645">
+    <field name="NAME">send data to FB</field>
+    <statement name="STACK">
+      <block type="write_DB" id=";nEBS8~EmDU_E+s:(T.2">
+        <value name="Value">
+          <shadow type="math_number" id="DubheR!2j%=qyW^5V%cn">
+            <field name="NUM">20</field>
+          </shadow>
+          <block type="read_timer" id="g(xLLXRf38c*iH(S@W`#">
+            <field name="Timer">0</field>
+          </block>
+        </value>
+        <value name="Key">
+          <shadow type="my_text" id="o?Oql$8b[EUAC^*mo8v0" inline="true">
+            <field name="TEXT">db/time</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="write_DB" id="jtB7M6Pt6#Ow-EAsF6d3">
+            <value name="Value">
+              <shadow type="math_number" id="dD!Ec$uGI-4$e$WJQFkX">
+                <field name="NUM">20</field>
+              </shadow>
+              <block type="my_variables_get_dynamic" id="_}0?LZ{05gB$dU!Ny$Yb">
+                <mutation blockstyle="Number"></mutation>
+                <field name="VAR" id="[](u6p/Xro5MSd//suly" variabletype="Number">angularVleft</field>
+              </block>
+            </value>
+            <value name="Key">
+              <shadow type="my_text" id="yxgy_XtpK;DGCndDys_r" inline="true">
+                <field name="TEXT">db/Lmotor/leftAngleVelocity</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="write_DB" id="9A9:MXG7?9,L=pw~`;R?">
+                <value name="Value">
+                  <shadow type="math_number">
+                    <field name="NUM">20</field>
+                  </shadow>
+                  <block type="my_variables_get_dynamic" id="_DU^O1zH]}X35SUoIb!t">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="#i?R;ZT.#E7lt-H=zzVu" variabletype="Number">angularVright</field>
+                  </block>
+                </value>
+                <value name="Key">
+                  <shadow type="my_text" id="/W1y};QIn8D!YRtXyb4:" inline="true">
+                    <field name="TEXT">db/Rmotor/rightAngleVelocity</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="*TwI^Sv)d:}7-WjgO-O^" x="-615" y="-345">
+    <field name="NAME">control motors</field>
+    <statement name="STACK">
+      <block type="controls_if" id="xmJtvcKc!uN(kBrOJjS$">
+        <value name="IF0">
+          <shadow type="logic_boolean" id="?ggF$6l.k^2q}ZDh81)V">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_compare" id="HkhkPwwqec`W,XjEoq{N">
+            <field name="OP">NEQ</field>
+            <value name="A">
+              <shadow type="math_number" id="!Uof+xb-4(x-E*gw0L*`">
+                <field name="NUM">20</field>
+              </shadow>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="PnZ#[iWRqhizh0p*TM`{">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="my_variables_set_dynamic" id="wHw4i3BtN],}AK0oMNF=">
+            <mutation blockstyle="Number"></mutation>
+            <field name="VAR" id="tD`2qXz:=5-Z,2}eaU`A" variabletype="Number">wanted V</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="XfbAbTr17yg0!*x+svF|">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="adv_virtual_sensor_measure" id="=C=#GotkG3t,MbwmNfE;">
+                <field name="Sensor">input_keypadL</field>
+              </block>
+            </value>
+            <next>
+              <block type="my_variables_set_dynamic" id="r3E1#b1!W67D$QVZA-ps">
+                <mutation blockstyle="Number"></mutation>
+                <field name="VAR" id="hypr;$boEi~y*pF]TT(9" variabletype="Number">U</field>
+                <value name="VALUE">
+                  <shadow type="math_number" id="uS445y^|9F`lz~S}Q*yU">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="math_advanced" id="Toz;oy4bnW3dczlCu(?h">
+                    <field name="equation">(a-b)*c</field>
+                    <value name="a">
+                      <shadow type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="my_variables_get_dynamic" id="z;yCU~+F|cpK@$a]49N!">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="tD`2qXz:=5-Z,2}eaU`A" variabletype="Number">wanted V</field>
+                      </block>
+                    </value>
+                    <value name="b">
+                      <shadow type="math_number">
+                        <field name="NUM">2.75</field>
+                      </shadow>
+                      <block type="my_variables_get_dynamic" id=".z15^S0=gys^JocjPL3}">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="[ETC-Zy78kuQ^N1{=H{]" variabletype="Number">V</field>
+                      </block>
+                    </value>
+                    <value name="c">
+                      <shadow type="math_number" id="%bs#:~a1Z9;8]M{@dcOo">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                    <value name="d">
+                      <shadow type="math_number" id=")Hndhqq(q3vyT9?y.{@1">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="my_variables_change_dynamic" id="[dwt4Rx,+QH69XBKG8RN">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="vb3?g!~D*:xn6jfu*/Mc">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="my_variables_get_dynamic" id="nRmww@ar5ln(+2$GBfTM">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="hypr;$boEi~y*pF]TT(9" variabletype="Number">U</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="my_variables_change_dynamic" id="N,8O%WDBqvDZIk@[_0Bx">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                        <value name="VALUE">
+                          <shadow type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="my_variables_get_dynamic" id="9F4lPVF}*vZ(2?/cN64t">
+                            <mutation blockstyle="Number"></mutation>
+                            <field name="VAR" id="hypr;$boEi~y*pF]TT(9" variabletype="Number">U</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="large_motor" id="(w4n!?@sx%H6(I00WBq5">
+            <field name="mode">LMotorOn</field>
+            <field name="port">B</field>
+            <value name="power">
+              <shadow type="field_slider" id="0NYM5%7/X}/_/^Fg*6h1" disabled="true">
+                <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                <field name="FIELDNAME">20</field>
+              </shadow>
+              <block type="my_variables_get_dynamic" id="3T8L)(b^b|2{*FJ.0pIR">
+                <mutation blockstyle="Number"></mutation>
+                <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+              </block>
+            </value>
+            <next>
+              <block type="large_motor" id="Ns8GDI~-A]*:N*NLi1Z0">
+                <field name="mode">LMotorOn</field>
+                <field name="port">C</field>
+                <value name="power">
+                  <shadow type="field_slider" disabled="true">
+                    <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                    <field name="FIELDNAME">20</field>
+                  </shadow>
+                  <block type="my_variables_get_dynamic" id=".*~$jSd(fRmu~8o%4sgm">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_whileUntilForever" id="nYciV9+w79EQz(Em{ez=">
+                    <field name="MODE">WHILE</field>
+                    <value name="BOOL">
+                      <shadow type="logic_boolean" id="1DeOiP6R%2NUaU.3~VoP">
+                        <field name="BOOL">TRUE</field>
+                      </shadow>
+                      <block type="logic_compare" id="lNONG]R?4FLJE~fr?-Q7">
+                        <field name="OP">NEQ</field>
+                        <value name="A">
+                          <shadow type="math_number" id="EWT3cO0i07hqW)d}yPtY">
+                            <field name="NUM">20</field>
+                          </shadow>
+                          <block type="virtual_sensor_measure" id="/GTi{0[7jQ!h]aJ[*Tc4">
+                            <field name="Sensor">JoyStick</field>
+                            <field name="index">0</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="?O*8oWdGats)rEx3v%gP">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="my_variables_set_dynamic" id="x%arZ9?vBI~c2uL`kVTs">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                        <value name="VALUE">
+                          <shadow type="math_number" id="YI0my1O(g+Xhk90d|JAg">
+                            <field name="NUM">0</field>
+                          </shadow>
+                          <block type="math_advanced" id="wVdm!#PpYitT@5b1LmK7">
+                            <field name="equation">a+b/10</field>
+                            <value name="a">
+                              <shadow type="math_number" id="goS2#H^Xd4,wN:|dA*d$">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="my_variables_get_dynamic" id="d~/e#_2}Tdpp+.,+1)SJ">
+                                <mutation blockstyle="Number"></mutation>
+                                <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                              </block>
+                            </value>
+                            <value name="b">
+                              <shadow type="math_number" id="+|!?9?6Q+q}6}wE]C+{R">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="virtual_sensor_measure" id="u_@)(%h^F!U={^Ajt9Y2">
+                                <field name="Sensor">JoyStick</field>
+                                <field name="index">0</field>
+                              </block>
+                            </value>
+                            <value name="c">
+                              <shadow type="math_number" id="{b+owI|]m1pcSe:-f~qo">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <value name="d">
+                              <shadow type="math_number" id="S.7EPmp{RVbqvm}0KGqS">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="my_variables_set_dynamic" id="HIie(stxVybnL#3fhTA,">
+                            <mutation blockstyle="Number"></mutation>
+                            <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                            <value name="VALUE">
+                              <shadow type="math_number" id="XI!(=W94UT%o/R)3VX]m">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="math_advanced" id="Vn[JlAmv0m@Cu2/5$daY">
+                                <field name="equation">a-b/10</field>
+                                <value name="a">
+                                  <shadow type="math_number" id="Sj:YIb-3o^?y3[]r%%,+">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="my_variables_get_dynamic" id="n};{uVUm*7Y9oD2:=3ah">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                                  </block>
+                                </value>
+                                <value name="b">
+                                  <shadow type="math_number">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="virtual_sensor_measure" id="MA?h1A[auD/#m`p,n%tf">
+                                    <field name="Sensor">JoyStick</field>
+                                    <field name="index">0</field>
+                                  </block>
+                                </value>
+                                <value name="c">
+                                  <shadow type="math_number" id="!1{Bv=bj4(sd7leeM$rl">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                                <value name="d">
+                                  <shadow type="math_number" id="5.[%pC[f1bD_lBjZKKc0">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="medium_motor" id="aZ_`;wP_,/]HFEzrtZT]">
+                                <field name="mode">MMotorOn</field>
+                                <field name="port">B</field>
+                                <value name="power">
+                                  <shadow type="field_slider">
+                                    <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                    <field name="FIELDNAME">62</field>
+                                  </shadow>
+                                  <block type="my_variables_get_dynamic" id="*fkfL`6$EORe8v|#PlZP">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="medium_motor" id="tmg-Q6}vvzW*n9`:;!SE">
+                                    <field name="mode">MMotorOn</field>
+                                    <field name="port">C</field>
+                                    <value name="power">
+                                      <shadow type="field_slider">
+                                        <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                        <field name="FIELDNAME">20</field>
+                                      </shadow>
+                                      <block type="my_variables_get_dynamic" id="fHV/vZSfX8_:{C($cxS_">
+                                        <mutation blockstyle="Number"></mutation>
+                                        <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="my_variables_change_dynamic" id="?Icu~v[=VpR8`E4G]HSK">
+                                        <mutation blockstyle="Number"></mutation>
+                                        <field name="VAR" id="!/S2bBvuhJa1Jbj`b];!" variabletype="Number">accPower</field>
+                                        <value name="VALUE">
+                                          <shadow type="math_number" id="#BW`46mg[}U{XJFSu##t">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="hH|SWa*YE7:Ok)$T_V;m">
+                                            <field name="OP">DIVIDE</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="4Z`cPMnMKO2|8GQd`HuH">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="virtual_sensor_measure" id="]#|dsO0Nl19#1!g2O;)g">
+                                                <field name="Sensor">JoyStick</field>
+                                                <field name="index">0</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="(6JE@zU_Rawth5p^Kri0">
+                                                <field name="NUM">10</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="procedures_callnoreturn" id="]Lm])_cEk,-=XJ_7gww|">
+                                            <mutation name="calculate v"></mutation>
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="=x(#:`V05ih}+).jCfod">
+                                                <mutation name="send data to FB"></mutation>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="my_variables_set_dynamic" id="aDB6dA{w`K!34+lrG0Zx">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                        <value name="VALUE">
+                          <shadow type="math_number" id="5CN#uJSF:7C^gC{1{x75">
+                            <field name="NUM">0</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="=Orm_XN$,M5_M$AfVOa?">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="HD}t)oU%_a3RY~ZibB~x">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="my_variables_get_dynamic" id="?v9)9iraq[Z-HufB=_wg">
+                                <mutation blockstyle="Number"></mutation>
+                                <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="*uVF1g|e4h7aHR(f@4tL">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="my_variables_get_dynamic" id="%bW{wXTH!F+w,mdDqY1O">
+                                <mutation blockstyle="Number"></mutation>
+                                <field name="VAR" id="!/S2bBvuhJa1Jbj`b];!" variabletype="Number">accPower</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="my_variables_set_dynamic" id="d.Ll]jjgq2TYJ?4f5Xwe">
+                            <mutation blockstyle="Number"></mutation>
+                            <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                            <value name="VALUE">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="r[Q^=0eLI$btr#nz:cz{">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="my_variables_get_dynamic" id="=RSx7;r,/ZHnXa-tfqhW">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="LxrM+~,:#sX/P$+wN!Z5" variabletype="Number">rightpower</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="b7/?0^3e.4oT(^*Cs|1/">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="my_variables_get_dynamic" id="Zt!A8OxYk2mZ!vd4rW?s">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="!/S2bBvuhJa1Jbj`b];!" variabletype="Number">accPower</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="my_variables_set_dynamic" id="*QCQ[#ZX$)~!N|FK/yM#">
+                                <mutation blockstyle="Number"></mutation>
+                                <field name="VAR" id="!/S2bBvuhJa1Jbj`b];!" variabletype="Number">accPower</field>
+                                <value name="VALUE">
+                                  <shadow type="math_number" id="xE;S45iY2hb8nyjlCDJQ">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="1j[MEcECsCSKFGM5`sYd" x="-1905" y="-135">
+    <field name="NAME">calculate v</field>
+    <statement name="STACK">
+      <block type="my_variables_set_dynamic" id="ep4t`Ks*[QHkCabE|7+j">
+        <mutation blockstyle="Number"></mutation>
+        <field name="VAR" id="!Q(J$Qk[5nSeNVPN1~5x" variabletype="Number">t0</field>
+        <value name="VALUE">
+          <shadow type="math_number" id="=Y4H=l*(gWKH4T2X]^ss">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="read_timer" id="oGW8?2$9;64JhO5=~)aD">
+            <field name="Timer">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="my_variables_set_dynamic" id="!x+(yW^mA$f`W$mT1ip8">
+            <mutation blockstyle="Number"></mutation>
+            <field name="VAR" id="[](u6p/Xro5MSd//suly" variabletype="Number">angularVleft</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="=PmDMP/hXXh65tISrCSQ">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="math_advanced" id="dTYd(o~W0of1IH#1FW,*">
+                <field name="equation">(a-b)/(c-x)</field>
+                <value name="a">
+                  <shadow type="math_number" id="+7jph3Ola.Fo4GV:{WGf">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="read_sensor_ev3" id="G5ALN10a@TKT/ujNG:3#">
+                    <field name="sensor">0</field>
+                    <field name="port">B</field>
+                  </block>
+                </value>
+                <value name="b">
+                  <shadow type="math_number" id="da%]$0*J*P9%IE}U#O/S">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="my_variables_get_dynamic" id="S|:]SBE_`1$}wg!g%lDI">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="noJA}tf_q5!VT4mmb!MH" variabletype="Number">angle0Left</field>
+                  </block>
+                </value>
+                <value name="c">
+                  <shadow type="math_number" id="]=~XL|F#J.xoc|2+P7nv">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="my_variables_get_dynamic" id="ZW@KM9J_/Wh7G5*{2Ofc">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="!Q(J$Qk[5nSeNVPN1~5x" variabletype="Number">t0</field>
+                  </block>
+                </value>
+                <value name="d">
+                  <shadow type="math_number" id=",-Nr|xnv5;QT{GF24.a9">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="my_variables_get_dynamic" id="3:{/%Q%L`LIJyOqB4_/i">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="vZv/zRwQDsUojFUYI~g3" variabletype="Number">t1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="my_variables_set_dynamic" id="vDr%2PsRW7;YgK*Wk85#">
+                <mutation blockstyle="Number"></mutation>
+                <field name="VAR" id="#i?R;ZT.#E7lt-H=zzVu" variabletype="Number">angularVright</field>
+                <value name="VALUE">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="math_advanced" id="36$nz|U}4,Z{;BKy58IL">
+                    <field name="equation">(a-b)/(c-x)</field>
+                    <value name="a">
+                      <shadow type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="read_sensor_ev3" id="g_[+[7pQ%@8u71qh1s3D">
+                        <field name="sensor">0</field>
+                        <field name="port">C</field>
+                      </block>
+                    </value>
+                    <value name="b">
+                      <shadow type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="my_variables_get_dynamic" id="/gvOkM`w9L7RVJKwivM?">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="((2R`k+0%S9g*+_n|0c%" variabletype="Number">angle0Right</field>
+                      </block>
+                    </value>
+                    <value name="c">
+                      <shadow type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="my_variables_get_dynamic" id="PB9pD,(}1;`P=/wrz:?9">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="!Q(J$Qk[5nSeNVPN1~5x" variabletype="Number">t0</field>
+                      </block>
+                    </value>
+                    <value name="d">
+                      <shadow type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="my_variables_get_dynamic" id="$gCm5=ITQLnRFCd}:{ZE">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="vZv/zRwQDsUojFUYI~g3" variabletype="Number">t1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="my_variables_set_dynamic" id="H5D3.lj-0+!u_IEuhhC;">
+                    <mutation blockstyle="Number"></mutation>
+                    <field name="VAR" id="noJA}tf_q5!VT4mmb!MH" variabletype="Number">angle0Left</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="^j:.cgl-z@wY$6lZ.X?V">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="read_sensor_ev3" id="R#a|RfH|Ivv;OdMh[}^h">
+                        <field name="sensor">0</field>
+                        <field name="port">B</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="my_variables_set_dynamic" id="4o|.Pzom6G%p(^}TYsZ{">
+                        <mutation blockstyle="Number"></mutation>
+                        <field name="VAR" id="((2R`k+0%S9g*+_n|0c%" variabletype="Number">angle0Right</field>
+                        <value name="VALUE">
+                          <shadow type="math_number">
+                            <field name="NUM">0</field>
+                          </shadow>
+                          <block type="read_sensor_ev3" id="dj!X.Z*4D^z{[97(4=cc">
+                            <field name="sensor">0</field>
+                            <field name="port">C</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="my_variables_set_dynamic" id="FRIn]H]QpCh;e6[:={1r">
+                            <mutation blockstyle="Number"></mutation>
+                            <field name="VAR" id="vZv/zRwQDsUojFUYI~g3" variabletype="Number">t1</field>
+                            <value name="VALUE">
+                              <shadow type="math_number" id="I]FnI(KHUD)?7%3=3LmU">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="read_timer" id="J@$Y?yv@wRUIt[$o.p^k">
+                                <field name="Timer">0</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="my_variables_set_dynamic" id="%%~1{jTM_uv9x6.dJQw$">
+                                <mutation blockstyle="Number"></mutation>
+                                <field name="VAR" id="o~.3FlRKqq68y$6NZWSI" variabletype="Number">vLeft</field>
+                                <value name="VALUE">
+                                  <shadow type="math_number" id="!if6l}2h]nXq,EIb@,YM">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="math_advanced" id="eCprLlxcjnd9G7;Osy{L">
+                                    <field name="equation">a*b/c</field>
+                                    <value name="a">
+                                      <shadow type="math_number" id="N;@b|OzSq%U?1`#qKY*R">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="my_variables_get_dynamic" id="_;wc)n:}rp5/q~m2=:Pq">
+                                        <mutation blockstyle="Number"></mutation>
+                                        <field name="VAR" id="[](u6p/Xro5MSd//suly" variabletype="Number">angularVleft</field>
+                                      </block>
+                                    </value>
+                                    <value name="b">
+                                      <shadow type="math_number" id="Cu{*/49l7VzVm=m2@mqu">
+                                        <field name="NUM">2.75</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="c">
+                                      <shadow type="math_number" id="n$HD;F10kxN*dHi.h:!Q">
+                                        <field name="NUM">360</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="d">
+                                      <shadow type="math_number" id="L6W,)SgER[;x$S1#iZpG">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="my_variables_set_dynamic" id="YD0;sE75ianWnv*):4n{">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="Tvk}|CV:vFI`8p:YbBEX" variabletype="Number">vRight</field>
+                                    <value name="VALUE">
+                                      <shadow type="math_number">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="math_advanced" id="8%eRyfjkB^9?K|bU$9AN">
+                                        <field name="equation">a*b/c</field>
+                                        <value name="a">
+                                          <shadow type="math_number">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="my_variables_get_dynamic" id="V2e,dtH=62:Ku`!WaP35">
+                                            <mutation blockstyle="Number"></mutation>
+                                            <field name="VAR" id="#i?R;ZT.#E7lt-H=zzVu" variabletype="Number">angularVright</field>
+                                          </block>
+                                        </value>
+                                        <value name="b">
+                                          <shadow type="math_number" id="*(*wmE;4di5v*+O%9?or">
+                                            <field name="NUM">2.75</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="c">
+                                          <shadow type="math_number" id="loaYs0#.1F%;XIn/u)o9">
+                                            <field name="NUM">360</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="d">
+                                          <shadow type="math_number" id="AYK*Ir}b/|%eTxOr@CHr">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="my_variables_set_dynamic" id="(jceO|^h2,KaX^,(p.G.">
+                                        <mutation blockstyle="Number"></mutation>
+                                        <field name="VAR" id="[ETC-Zy78kuQ^N1{=H{]" variabletype="Number">V</field>
+                                        <value name="VALUE">
+                                          <shadow type="math_number" id="(ZMypCu)+H!/hqC?KRVa">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                          <block type="math_advanced" id="`4()@@XFktt2twapBlUe">
+                                            <field name="equation">(a+b)/2</field>
+                                            <value name="a">
+                                              <shadow type="math_number">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="my_variables_get_dynamic" id="ZQe6:0`tTBo-Enm8F5|d">
+                                                <mutation blockstyle="Number"></mutation>
+                                                <field name="VAR" id="o~.3FlRKqq68y$6NZWSI" variabletype="Number">vLeft</field>
+                                              </block>
+                                            </value>
+                                            <value name="b">
+                                              <shadow type="math_number" id="Xi4?`?T=*|$$:D~j;t]M">
+                                                <field name="NUM">2.75</field>
+                                              </shadow>
+                                              <block type="my_variables_get_dynamic" id="?w_bD[jq*r^Il2y^jU~B">
+                                                <mutation blockstyle="Number"></mutation>
+                                                <field name="VAR" id="Tvk}|CV:vFI`8p:YbBEX" variabletype="Number">vRight</field>
+                                              </block>
+                                            </value>
+                                            <value name="c">
+                                              <shadow type="math_number" id="EgkTx.L-OS{yEvz|DsPy">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="d">
+                                              <shadow type="math_number" id="1jw?$#X%a;Q=iZQ`$vNI">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="lcd_message" id="GYtJ)5E3J8*KJEegc^!O">
+                                            <field name="Color">0</field>
+                                            <value name="TextInput">
+                                              <shadow type="my_text" id="3-vX|_I{1AGwuKobtE~0">
+                                                <field name="TEXT">hello</field>
+                                              </shadow>
+                                              <block type="my_variables_get_dynamic" id="_3IrxC=8OPqIE:F;7Me~">
+                                                <mutation blockstyle="Number"></mutation>
+                                                <field name="VAR" id="[ETC-Zy78kuQ^N1{=H{]" variabletype="Number">V</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="write_DB" id="WGN%)u(pMvjv`.N]`7.*">
+                                                <value name="Value">
+                                                  <shadow type="math_number" id="#T#*5za_h[aR!PMQ7%vy">
+                                                    <field name="NUM">20</field>
+                                                  </shadow>
+                                                  <block type="math_arithmetic" id="a5m%sOI}z!xdfH`7mREo">
+                                                    <field name="OP">MINUS</field>
+                                                    <value name="A">
+                                                      <shadow type="math_number" id="XHr5~YA4sb5.SEmf!BRC">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="my_variables_get_dynamic" id="rE:A/H7U#Kx,sH/[Ov34">
+                                                        <mutation blockstyle="Number"></mutation>
+                                                        <field name="VAR" id="vZv/zRwQDsUojFUYI~g3" variabletype="Number">t1</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <shadow type="math_number" id="_yhnCy#t:h!wR:yZ5D?[">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="my_variables_get_dynamic" id="Ifhsl*2Bw]X2rn,c6~~t">
+                                                        <mutation blockstyle="Number"></mutation>
+                                                        <field name="VAR" id="!Q(J$Qk[5nSeNVPN1~5x" variabletype="Number">t0</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="Key">
+                                                  <shadow type="my_text" id="N?_d@|-VB_m}VBcz=b?(">
+                                                    <field name="TEXT">db/timeDiff</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="math_arithmetic" id="T2%Ew4^#{6m_m6R7?Fwy" disabled="true" x="45" y="915">
+    <field name="OP">ADD</field>
+    <value name="A">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="my_variables_get_dynamic" id="_.iEy|c9U|Xh*uS3C@*m">
+        <mutation blockstyle="Number"></mutation>
+        <field name="VAR" id="]()ai146Sj_ER6Om%(Nq" variabletype="Number">leftpower</field>
+      </block>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="my_variables_get_dynamic" id="I:sc_+g.}ad?ihXtX]Nu">
+        <mutation blockstyle="Number"></mutation>
+        <field name="VAR" id="!/S2bBvuhJa1Jbj`b];!" variabletype="Number">accPower</field>
+      </block>
+    </value>
+  </block>
+</xml>

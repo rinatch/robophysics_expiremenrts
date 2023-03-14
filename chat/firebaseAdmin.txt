@@ -1,0 +1,26 @@
+from vpython import *
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import db
+
+cred = credentials.Certificate("your-key.json")
+firebase_admin.initialize_app(cred,{
+    'databaseURL': 'realtime-DB-url'}
+)
+
+ref = db.reference('app/chats/' + groupName) #db reference creation
+
+ref.set(Name + ' was joined to ' + groupName + 'Group')//set value
+ref.get() // get value
+
+
+def callback(e):
+	#logic
+
+
+ref.listen(callback) // listening on the change of the path
+
+//proceed running
+while True:
+    rate(1)
+

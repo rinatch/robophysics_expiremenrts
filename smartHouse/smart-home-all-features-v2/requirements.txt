@@ -1,0 +1,4 @@
+telegram==latest
+python-telegram-bot==13.7
+firebase_admin==latest
+phonenumbers==latest

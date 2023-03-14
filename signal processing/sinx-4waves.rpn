@@ -1,0 +1,97 @@
+2.00.01
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="Number" id="Bu%lp6rivLH6:g)k9Ahc">i</variable>
+  </variables>
+  <block type="start_block" id="i%OvO)Z!qfJ;a},k=HRJ" x="-795" y="-435">
+    <field name="task_name">task1</field>
+    <statement name="DO">
+      <block type="controls_for" id="#jfj`Kc4E[_au13xLJJO">
+        <field name="VAR" id="Bu%lp6rivLH6:g)k9Ahc" variabletype="Number">i</field>
+        <value name="FROM">
+          <shadow type="math_number" id=")mH/P#S83.qlxNHAVvS^">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number" id="k!aRFZIa9So2/u{e?Q_M">
+            <field name="NUM">360</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="cknnK*lP?[cy6wI/-A(F">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="graph" id="G5KOM}.8:cJ0]Yp*XD6j" inline="false">
+            <field name="Color">0</field>
+            <field name="Clear">FALSE</field>
+            <value name="x">
+              <shadow type="math_number" id="Jd(-LM3fs!D%R_P~xvvn">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="my_variables_get_dynamic" id="q%k-@i9sWL/%Stafp6jq">
+                <mutation blockstyle="Number"></mutation>
+                <field name="VAR" id="Bu%lp6rivLH6:g)k9Ahc" variabletype="Number">i</field>
+              </block>
+            </value>
+            <value name="y">
+              <shadow type="math_number" id="Ny,;3/MKSqq0{XB4`|P8">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="math_advanced" id="cC7sm_$_hhK=08)G5BOZ">
+                <field name="equation">a*x+b</field>
+                <value name="a">
+                  <shadow type="math_number" id="anl]S:t9cF;*HtPiIJ)y">
+                    <field name="NUM">100</field>
+                  </shadow>
+                </value>
+                <value name="b">
+                  <shadow type="math_number" id="gwb5:vcwk0~`=Pj0T:f*">
+                    <field name="NUM">200</field>
+                  </shadow>
+                </value>
+                <value name="c">
+                  <shadow type="math_number" id="h+8S6Mq;aJpE3?XS(=oV">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="d">
+                  <shadow type="math_number" id="FbWJeV}{S([fHw6pQt14">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_trig" id="%BGRbntCOv@gHH)l8,$J">
+                    <field name="OP">SIN</field>
+                    <value name="NUM">
+                      <shadow type="math_number" id="5bRLW5$MmAOXJg}x~iIR">
+                        <field name="NUM">45</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="E)Q4/cj95+7P`sR4Qd$h">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <shadow type="math_number" id="yl6`5h8A?Kbf|q{?3~w_">
+                            <field name="NUM">4</field>
+                          </shadow>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="5o(^KVe6ml;+=4x?$d?h">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="my_variables_get_dynamic" id="FuzXErJ%mS4eDowGy)q7">
+                            <mutation blockstyle="Number"></mutation>
+                            <field name="VAR" id="Bu%lp6rivLH6:g)k9Ahc" variabletype="Number">i</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

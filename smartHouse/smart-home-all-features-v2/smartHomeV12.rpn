@@ -1,0 +1,1211 @@
+2.00.01
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="Number" id="oUYXcTW!AywQEh+q4.YH">dist</variable>
+  </variables>
+  <block type="initiate_block" id="d,sh=sq0QB#*E!{c2Tvl" x="-2115" y="-825">
+    <statement name="DO">
+      <block type="init_DB" id="}7uw(o)*YLwc(/vtGR-z">
+        <value name="URLInput">
+          <shadow type="my_text" id="0juI#7JP!T{P83f[N-^m">
+            <field name="TEXT">https://telebot-robophone-default-rtdb.europe-west1.firebasedatabase.app/</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="write_DB" id="oT~?Cc8Hgao1{:veam?[">
+            <value name="Value">
+              <shadow type="math_number">
+                <field name="NUM">20</field>
+              </shadow>
+              <block type="my_text" id="8mHo?J:{492Yz-vy=6!e">
+                <field name="TEXT">OFF</field>
+              </block>
+            </value>
+            <value name="Key">
+              <shadow type="my_text" id="1;m|3Lq`=,^}6p^jdv5)">
+                <field name="TEXT">Alarm</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="write_DB" id="pag%U/8)4tbEkZd%jC7y">
+                <value name="Value">
+                  <shadow type="math_number">
+                    <field name="NUM">20</field>
+                  </shadow>
+                  <block type="my_text" id="I]C:]:;UEoh|y3eS~wc6">
+                    <field name="TEXT">None</field>
+                  </block>
+                </value>
+                <value name="Key">
+                  <shadow type="my_text" id="8nV*RI;yE*Z12|#|fn)G">
+                    <field name="TEXT">Action</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="write_DB" id="RHueG*@g,oJ,}nO9yjd^">
+                    <value name="Value">
+                      <shadow type="math_number">
+                        <field name="NUM">20</field>
+                      </shadow>
+                      <block type="my_text" id="@HA8wyuAQc0(0BXI@8$5">
+                        <field name="TEXT">OFF</field>
+                      </block>
+                    </value>
+                    <value name="Key">
+                      <shadow type="my_text" id="`mSySu]Q~TbRSsSk:sQP">
+                        <field name="TEXT">status</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="write_DB" id="%(f_$Dn!#i$^(G7IV*Pj">
+                        <value name="Value">
+                          <shadow type="math_number">
+                            <field name="NUM">20</field>
+                          </shadow>
+                          <block type="my_text" id="tc_8ZlFgGs#DS$0T9$wA">
+                            <field name="TEXT">OFF</field>
+                          </block>
+                        </value>
+                        <value name="Key">
+                          <shadow type="my_text" id="qBA)mm,96Bmu.*[;OJ*0">
+                            <field name="TEXT">day_sim</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="write_DB" id="KqZG/#waKx24e~`7|AC*">
+                            <value name="Value">
+                              <shadow type="math_number" id="_+pLA;GX#YTlOGW9|UX_">
+                                <field name="NUM">20</field>
+                              </shadow>
+                              <block type="my_text" id="BxRC4bNy-Il|fHlrmTc=">
+                                <field name="TEXT">OFF</field>
+                              </block>
+                            </value>
+                            <value name="Key">
+                              <shadow type="my_text" id="(:?uHR304;hW;FP2YCV#">
+                                <field name="TEXT">is_family_member</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="write_DB" id="dn:%+uG:;BaP*P%0S@p9">
+                                <value name="Value">
+                                  <shadow type="math_number">
+                                    <field name="NUM">20</field>
+                                  </shadow>
+                                  <block type="my_text" id="|lO1y6f3uO-B*7-cs7jd">
+                                    <field name="TEXT">+972526729203</field>
+                                  </block>
+                                </value>
+                                <value name="Key">
+                                  <shadow type="my_text" id="DH8|ms9~7^Q;X9$[I$vG">
+                                    <field name="TEXT">contact_number</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="motor_ports" id="I();4ECE`llsgPK]yrJA">
+                                    <field name="Port1">A</field>
+                                    <field name="Port2">B</field>
+                                    <next>
+                                      <block type="motor_ports" id="{Xwk])BA2nF[D$bsI4Iv">
+                                        <field name="Port1">D</field>
+                                        <field name="Port2">C</field>
+                                        <next>
+                                          <block type="reset_sensor_ev3" id="(YhL8W~uEz7}D!.,JT;=">
+                                            <field name="sensor">2</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="start_block" id="SSYP#}JqVwll;Zssudk;" x="-705" y="-825">
+    <field name="task_name">task2</field>
+    <statement name="DO">
+      <block type="controls_whileUntilForever" id="=SE*ZXHbU-%xYWGnUs_?">
+        <field name="MODE">FOREVER</field>
+        <statement name="DO">
+          <block type="change_DB" id="@2cSc/N(CW)2y8{R@~Ud">
+            <value name="Key">
+              <shadow type="my_text" id="[O~a*5phsMy1Pm!SD.%M">
+                <field name="TEXT">Action</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="controls_if" id="nuEh|k/IDl9v|*ZLQWzO">
+                <value name="IF0">
+                  <shadow type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                  </shadow>
+                  <block type="logic_compare" id="#,6!-!aA/,z?Usl$skeT">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <shadow type="math_number">
+                        <field name="NUM">20</field>
+                      </shadow>
+                      <block type="read_DB" id="oi8d|)h6f1rLE39/55(s">
+                        <value name="Key">
+                          <shadow type="my_text" id="?t_ESkKjcLe68YJUVs^p">
+                            <field name="TEXT">Action</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number">
+                        <field name="NUM">5</field>
+                      </shadow>
+                      <block type="my_text" id="i6M/2[la1/C/f^A*JXMM">
+                        <field name="TEXT">message</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="lcd_message" id="sL`DrZQ2K?:;?AD_@}u]">
+                    <field name="Color">3</field>
+                    <value name="TextInput">
+                      <shadow type="my_text" id="J4l!rlJA,bE9~.u?L.#@">
+                        <field name="TEXT">Sending sms</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="sendSMS" id="?Z)KBsKhdiw!kBnl=x4E">
+                        <value name="Phone">
+                          <shadow type="my_text" id="6217Lj4FTe^btLL^zOTk">
+                            <field name="TEXT">+972526729203</field>
+                          </shadow>
+                        </value>
+                        <value name="Message">
+                          <shadow type="my_text">
+                            <field name="TEXT"> Help! Someone is breaking into my house!!! It's me</field>
+                          </shadow>
+                          <block type="text_join" id="E#_~YI=,-_aiIg{gZswj">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <shadow type="my_text">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="read_DB" id="MIP1_+*I5?8.xe@ieiAQ">
+                                <value name="Key">
+                                  <shadow type="my_text" id="Y[rs/WhdT=k|P[-16K3v">
+                                    <field name="TEXT">contact_name</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <shadow type="my_text">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="text_join" id="moUGF~+RJe(epz$e^1rK">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <shadow type="my_text" id="Ch|];m9(5~lkNu6mAn:o">
+                                    <field name="TEXT"> Help! Someone is breaking into my house!!! It's me </field>
+                                  </shadow>
+                                </value>
+                                <value name="ADD1">
+                                  <shadow type="my_text">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                  <block type="read_DB" id="?tVr9gLEU/TESts%rrpY">
+                                    <value name="Key">
+                                      <shadow type="my_text" id=")5lH4G7xZuD|?t5nLOe?">
+                                        <field name="TEXT">user_first_name</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="gb=!!%ZNXC](J6Kr%9lT">
+                    <value name="IF0">
+                      <shadow type="logic_boolean">
+                        <field name="BOOL">TRUE</field>
+                      </shadow>
+                      <block type="logic_compare" id="Sg-DW$Tmr%m8g{_jT/pS">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <shadow type="math_number">
+                            <field name="NUM">20</field>
+                          </shadow>
+                          <block type="read_DB" id=";U+#z,En=9KIklpXmR%x">
+                            <value name="Key">
+                              <shadow type="my_text" id="n3]0O4hY+D)v},+H6]N}">
+                                <field name="TEXT">Action</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number">
+                            <field name="NUM">5</field>
+                          </shadow>
+                          <block type="my_text" id="NtT@)d3NfiT}RmG7%zN?">
+                            <field name="TEXT">police</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="playAudio" id="f*GV.0[[.Q{%!o_|cR-G">
+                        <field name="sound">custom</field>
+                        <field name="Flag">0</field>
+                        <value name="FileName">
+                          <shadow type="my_text" id="zBO-}.+MnO1y3FC!(7{L">
+                            <field name="TEXT">go_away</field>
+                          </shadow>
+                        </value>
+                        <value name="Volume">
+                          <shadow type="field_slider" id="|gVlT~!I=sL:oBowCV5b">
+                            <mutation color="#7070ff" min="0" max="100"></mutation>
+                            <field name="FIELDNAME">100</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="lcd_message" id="f@wwIGFRE[Tn[S09hciK">
+                            <field name="Color">3</field>
+                            <value name="TextInput">
+                              <shadow type="my_text" id="LJl7.kvP{$;~`]x):F:L">
+                                <field name="TEXT">Calling the police</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="^rkwcTHEtwTJ1P%yYYF$">
+                        <value name="IF0">
+                          <shadow type="logic_boolean">
+                            <field name="BOOL">TRUE</field>
+                          </shadow>
+                          <block type="logic_compare" id="+z#zy50.]tn]HR#nD7:%">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <shadow type="math_number">
+                                <field name="NUM">20</field>
+                              </shadow>
+                              <block type="read_DB" id="Sni|s4YDXYmGiq`c/0!e">
+                                <value name="Key">
+                                  <shadow type="my_text" id="A,8dBZ5|9U?FzgKMmiWc">
+                                    <field name="TEXT">Action</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number">
+                                <field name="NUM">5</field>
+                              </shadow>
+                              <block type="my_text" id="30k2UqK*96i*n^e$1~`4">
+                                <field name="TEXT">alert</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="lcd_message" id="eNxVXHdy%fP}zr#G|]Ui">
+                            <field name="Color">3</field>
+                            <value name="TextInput">
+                              <shadow type="my_text" id="FZrma=MhT,dwv?OZA90M">
+                                <field name="TEXT">Turning on the alert</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="playAudio" id="`0DDt+LzNe/PtCtH%OfM">
+                                <field name="sound">custom</field>
+                                <field name="Flag">0</field>
+                                <value name="FileName">
+                                  <shadow type="my_text" id="0:zYZrs2lV0?F|E!;gqN">
+                                    <field name="TEXT">siren</field>
+                                  </shadow>
+                                </value>
+                                <value name="Volume">
+                                  <shadow type="field_slider" id="H*[0^=5]u{0vMe[0X,ZO">
+                                    <mutation color="#7070ff" min="0" max="100"></mutation>
+                                    <field name="FIELDNAME">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="faces_position_compare" id="]80,Q}M?5cqFWN:Eop`a" disabled="true" x="-1275" y="-195">
+    <field name="index">2</field>
+    <field name="Mode">CMPFaceDetectCPP</field>
+    <field name="operator">3</field>
+    <value name="VALUE">
+      <shadow type="math_number" id="z/cKv9hse`QfFeGB9GNh">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="start_block" id="uc/}1kAW?Qlw@7+mS-ui" x="-2115" y="-135">
+    <field name="task_name">task1</field>
+    <statement name="DO">
+      <block type="controls_whileUntilForever" id="MMMp@MZW3Jzt`vvfWxt7">
+        <field name="MODE">FOREVER</field>
+        <statement name="DO">
+          <block type="lcd_text" id="P$P?=RJQD4p``oPwIi}8">
+            <field name="Color">0</field>
+            <value name="TextInput">
+              <shadow type="my_text">
+                <field name="TEXT">hello</field>
+              </shadow>
+              <block type="text_join" id="L0[lJ5RZh2Y_`*YV6%OP">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <shadow type="my_text" id="*cxg3lcS!|u$yH4drPcc">
+                    <field name="TEXT">System's status is: </field>
+                  </shadow>
+                </value>
+                <value name="ADD1">
+                  <shadow type="my_text">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="read_DB" id="{w?jZcyX#mQ/OY-`CsKy">
+                    <value name="Key">
+                      <shadow type="my_text" id=":Ih;`sT1~1obiaSNH%k-">
+                        <field name="TEXT">status</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="LineNumber">
+              <shadow type="field_slider" id="f6*PN$|$4oQB[rZ[p}Wk">
+                <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                <field name="FIELDNAME">0</field>
+              </shadow>
+            </value>
+            <value name="Offset">
+              <shadow type="field_slider" id="37d}_/{@.WeTH`8J/)11">
+                <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                <field name="FIELDNAME">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="controls_if" id="m^fhh$*0kCm2a,w;!]j1">
+                <value name="IF0">
+                  <shadow type="logic_boolean" id="9JF]rU4@kw^dgKmoVF(~">
+                    <field name="BOOL">TRUE</field>
+                  </shadow>
+                  <block type="adv_virtual_sensor_compare" id="E(@c^3n#qS0J6H1e1cg|">
+                    <field name="Sensor">Key3Compare</field>
+                    <field name="State">2</field>
+                    <field name="operator">0</field>
+                    <field name="RowIndex">0</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="DthG0w*STeTZ[h62/(]q">
+                    <mutation elseif="0" else="1"></mutation>
+                    <value name="IF0">
+                      <shadow type="logic_boolean" id="Urq7=5``OGt;W4^k|~%{">
+                        <field name="BOOL">TRUE</field>
+                      </shadow>
+                      <block type="logic_compare" id="2u1O93kQBYeakY;:PIaX">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <shadow type="math_number">
+                            <field name="NUM">20</field>
+                          </shadow>
+                          <block type="read_DB" id="_o{L@Yl_7pI,qOZ:U@:K">
+                            <value name="Key">
+                              <shadow type="my_text" id="0x(dnD{jErkZhH(?,]N-">
+                                <field name="TEXT">status</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number">
+                            <field name="NUM">5</field>
+                          </shadow>
+                          <block type="my_text" id="V6q4%3f*;Y!thTRUg^`r">
+                            <field name="TEXT">ON</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="[Zag$-}cU]+@;!+fTJX:">
+                        <mutation elseif="0" else="1"></mutation>
+                        <value name="IF0">
+                          <shadow type="logic_boolean" id="mbi%7{J2So,v^L)uJLKD">
+                            <field name="BOOL">TRUE</field>
+                          </shadow>
+                          <block type="compare_faces_name" id="dQVfnIV=38h,_PQv?_dG">
+                            <field name="Mode">CompareFaceName</field>
+                            <field name="operator">0</field>
+                            <value name="threshold">
+                              <shadow type="my_text" id="JQ#:/20!.n~=|(vjh6sm">
+                                <field name="TEXT">Rinat</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="lcd_text" id="-.HVqN-{D+JK8C^v`gxl">
+                            <field name="Color">2</field>
+                            <value name="TextInput">
+                              <shadow type="my_text" id="*4J3XSe_.Y%.A:e}M%G%">
+                                <field name="TEXT">Welcome Home!</field>
+                              </shadow>
+                            </value>
+                            <value name="LineNumber">
+                              <shadow type="field_slider" id="nXKL8$:2SETBATbtQvfR">
+                                <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                                <field name="FIELDNAME">3</field>
+                              </shadow>
+                            </value>
+                            <value name="Offset">
+                              <shadow type="field_slider" id="(f`v[(xF{P~Eh|(%GZNX">
+                                <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                                <field name="FIELDNAME">0</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="write_DB" id="OA`[Uyby-l.|^Q[[{%0F">
+                                <value name="Value">
+                                  <shadow type="math_number">
+                                    <field name="NUM">20</field>
+                                  </shadow>
+                                  <block type="my_text" id="}:0g9ka*}t3O[6r~lDq1">
+                                    <field name="TEXT">ON</field>
+                                  </block>
+                                </value>
+                                <value name="Key">
+                                  <shadow type="my_text" id="u5NxWH{$e!OiVNi_+Dj8">
+                                    <field name="TEXT">is_family_member</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="write_DB" id="iM9%/dcI9Yi?;c|e)dHg">
+                                    <value name="Value">
+                                      <shadow type="math_number">
+                                        <field name="NUM">20</field>
+                                      </shadow>
+                                      <block type="my_text" id="StSk}),7g?TaE=ng8mk%">
+                                        <field name="TEXT">OFF</field>
+                                      </block>
+                                    </value>
+                                    <value name="Key">
+                                      <shadow type="my_text" id="b3]LbiL6PZ?]*A40kD`c">
+                                        <field name="TEXT">Alarm</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="large_motor" id="[g|R,BP`hodp^tt)WAiq">
+                                        <field name="mode">LMotorDegOn</field>
+                                        <field name="port">C</field>
+                                        <field name="brake">FALSE</field>
+                                        <field name="complete">TRUE</field>
+                                        <value name="power">
+                                          <shadow type="field_slider" id="I|kMn(E7r+Dl?RvKs|Yq">
+                                            <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                            <field name="FIELDNAME">10</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="degrees">
+                                          <shadow type="math_number" id="R9[[;ZL*Jc[8J$JccLds">
+                                            <field name="NUM">90</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="large_motor" id="IikOF6@)(lU7.n8k~rZ1">
+                                            <field name="mode">LMotorDegOn</field>
+                                            <field name="port">C</field>
+                                            <field name="brake">FALSE</field>
+                                            <field name="complete">TRUE</field>
+                                            <value name="power">
+                                              <shadow type="field_slider" id="*qyKoU#F;ISGPA}PZoIY">
+                                                <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                                <field name="FIELDNAME">10</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="degrees">
+                                              <shadow type="math_number" id="o1d/x9*@RO9S.6IkylOd">
+                                                <field name="NUM">-90</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="lcd_text" id="biu6:ie,UQ]AHy_BOJ/`">
+                            <field name="Color">0</field>
+                            <value name="TextInput">
+                              <shadow type="my_text" id="XB3ycrt7TR^Ya-,[3X%N">
+                                <field name="TEXT">Undetected Person!</field>
+                              </shadow>
+                            </value>
+                            <value name="LineNumber">
+                              <shadow type="field_slider" id="K=OIjowV,/dxv|pF%4pZ">
+                                <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                                <field name="FIELDNAME">3</field>
+                              </shadow>
+                            </value>
+                            <value name="Offset">
+                              <shadow type="field_slider" id="0@o$IT({DLW2)2Vx#v1D">
+                                <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                                <field name="FIELDNAME">2</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="write_DB" id="DT}hU=*5`2/[R=In!OBr">
+                                <value name="Value">
+                                  <shadow type="math_number">
+                                    <field name="NUM">20</field>
+                                  </shadow>
+                                  <block type="my_text" id="mU_?qQ74//kHUC|/f*S~">
+                                    <field name="TEXT">OFF</field>
+                                  </block>
+                                </value>
+                                <value name="Key">
+                                  <shadow type="my_text" id="KH=8X](V1}MJV*/}-bb|">
+                                    <field name="TEXT">is_family_member</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="write_DB" id="IUKyty/tfVQE[#lXCY:O">
+                                    <value name="Value">
+                                      <shadow type="math_number">
+                                        <field name="NUM">20</field>
+                                      </shadow>
+                                      <block type="my_text" id="aM|vZ^#8q67);X70SEgG">
+                                        <field name="TEXT">ON</field>
+                                      </block>
+                                    </value>
+                                    <value name="Key">
+                                      <shadow type="my_text" id="I[BUUkKFSXghp+2p,Yjy">
+                                        <field name="TEXT">Alarm</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="controls_if" id=":DGJ6s(o;pGLZ#K5lX)4">
+                        <value name="IF0">
+                          <shadow type="logic_boolean" id="U9R!OUE{V]$wC_K[yV8$">
+                            <field name="BOOL">TRUE</field>
+                          </shadow>
+                          <block type="compare_faces_name" id="N`%_PD6#[)3@p=ZqIM/{">
+                            <field name="Mode">CompareFaceName</field>
+                            <field name="operator">0</field>
+                            <value name="threshold">
+                              <shadow type="my_text" id="oJKtJ}VP|H5qb5VEL$v/">
+                                <field name="TEXT">Rinat</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="lcd_text" id="+#]pkVKeeZ=o~lFt+mtX">
+                            <field name="Color">2</field>
+                            <value name="TextInput">
+                              <shadow type="my_text" id="*SS?$`30/km,kB=.d[`j">
+                                <field name="TEXT">Welcome Home!</field>
+                              </shadow>
+                            </value>
+                            <value name="LineNumber">
+                              <shadow type="field_slider" id="wa:4,0{kDu#5bKJha/a.">
+                                <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                                <field name="FIELDNAME">3</field>
+                              </shadow>
+                            </value>
+                            <value name="Offset">
+                              <shadow type="field_slider" id="?xu@.l8Y#a2tjvvJU_3$">
+                                <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                                <field name="FIELDNAME">0</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="write_DB" id="Yr{ge#0)ZkFk^ayz?Y8y">
+                                <value name="Value">
+                                  <shadow type="math_number">
+                                    <field name="NUM">20</field>
+                                  </shadow>
+                                  <block type="my_text" id="{m)NWkeKI2X0E:,k9_7;">
+                                    <field name="TEXT">ON_2</field>
+                                  </block>
+                                </value>
+                                <value name="Key">
+                                  <shadow type="my_text" id="cI`yR;)z{-ttmh`$5X~[">
+                                    <field name="TEXT">is_family_member</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="write_DB" id="qwbhRv7/Q6z-z)7gGXF0">
+                                    <value name="Value">
+                                      <shadow type="math_number">
+                                        <field name="NUM">20</field>
+                                      </shadow>
+                                      <block type="my_text" id="yB}/YaA:T7!np4Xv)]K+">
+                                        <field name="TEXT">OFF</field>
+                                      </block>
+                                    </value>
+                                    <value name="Key">
+                                      <shadow type="my_text" id="H+c_$PwfX$*Z-yiqbfq]">
+                                        <field name="TEXT">Alarm</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="large_motor" id="4|]1Yo7rsY7gO|ei{SzQ">
+                                        <field name="mode">LMotorDegOn</field>
+                                        <field name="port">C</field>
+                                        <field name="brake">FALSE</field>
+                                        <field name="complete">TRUE</field>
+                                        <value name="power">
+                                          <shadow type="field_slider" id="^5cX1l57TB/?x/FotV^+">
+                                            <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                            <field name="FIELDNAME">10</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="degrees">
+                                          <shadow type="math_number" id="zhaL$HkyXrz2Cb|+~j3U">
+                                            <field name="NUM">90</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="large_motor" id="+#+{8;7WO^-3.dW2_RrG">
+                                            <field name="mode">LMotorDegOn</field>
+                                            <field name="port">C</field>
+                                            <field name="brake">FALSE</field>
+                                            <field name="complete">TRUE</field>
+                                            <value name="power">
+                                              <shadow type="field_slider" id="#}RAxb`RkaO2sRV:2,N#">
+                                                <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                                <field name="FIELDNAME">15</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="degrees">
+                                              <shadow type="math_number" id="%Qt0U7VfjQW#4zR4.kG%">
+                                                <field name="NUM">-90</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <next>
+                  <block type="wait" id="r5N!.w%E1RWF_~:Pm)K|">
+                    <field name="unit">sec</field>
+                    <value name="MilliSECONDS">
+                      <shadow type="math_number" id="G-R9y/^AB(x+A7i{}g61">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="start_block" id="nJQ7rAJWY)Wvt~vE$@ky" x="-705" y="195">
+    <field name="task_name">task3</field>
+    <statement name="DO">
+      <block type="my_variables_set_dynamic" id="8@l+8K^kk1O%.ph(jp69">
+        <mutation blockstyle="Number"></mutation>
+        <field name="VAR" id="oUYXcTW!AywQEh+q4.YH" variabletype="Number">dist</field>
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="read_sensor_ev3" id="xzy2$P?38dY1MAhDtfoQ">
+            <field name="sensor">2</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_whileUntilForever" id="N7}`On,iA_E|XHNxY^5J">
+            <field name="MODE">FOREVER</field>
+            <statement name="DO">
+              <block type="lcd_text" id="6`FRHPFm5^z-/~k^OhvJ">
+                <field name="Color">0</field>
+                <value name="TextInput">
+                  <shadow type="my_text">
+                    <field name="TEXT">hello</field>
+                  </shadow>
+                  <block type="text_join" id="ml,VSKkT2u:k6^!fs7_m">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <shadow type="my_text" id="JbQ%q2Dw`6-WL0Jo{D^A">
+                        <field name="TEXT">System's status is: </field>
+                      </shadow>
+                    </value>
+                    <value name="ADD1">
+                      <shadow type="my_text">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="read_DB" id="4.SL7{{fgUNAgQ7H3;dD">
+                        <value name="Key">
+                          <shadow type="my_text" id="v|QJjm%]lSUSDHK=1~f`">
+                            <field name="TEXT">status</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="LineNumber">
+                  <shadow type="field_slider" id=")lR|(|nW4Lunf%^=krsT">
+                    <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                    <field name="FIELDNAME">0</field>
+                  </shadow>
+                </value>
+                <value name="Offset">
+                  <shadow type="field_slider" id="E|{^E7O?|_S_DRL7?(vw">
+                    <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                    <field name="FIELDNAME">0</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_if" id="T#c=-^uc3c]hP[gEA/Xs">
+                    <value name="IF0">
+                      <shadow type="logic_boolean">
+                        <field name="BOOL">TRUE</field>
+                      </shadow>
+                      <block type="logic_compare" id="4`-P6FHF;qc^_PK57ga?">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <shadow type="math_number">
+                            <field name="NUM">20</field>
+                          </shadow>
+                          <block type="read_DB" id="y_E00ZoDEDOAvSnsGw=0">
+                            <value name="Key">
+                              <shadow type="my_text" id="@k7L_f~0JF:3CH)[pq7%">
+                                <field name="TEXT">status</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number">
+                            <field name="NUM">5</field>
+                          </shadow>
+                          <block type="my_text" id="qUGce0,fO`8fRW/]?}93">
+                            <field name="TEXT">ON</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="lcd_text" id="+fQfa/~fL8HV4vx[x~rX">
+                        <field name="Color">0</field>
+                        <value name="TextInput">
+                          <shadow type="my_text">
+                            <field name="TEXT">hello</field>
+                          </shadow>
+                          <block type="text_join" id="|AU5ujDgyORABt8*Ih]3">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <shadow type="my_text" id="M^gEYf@?)U~3J;vPX3zH">
+                                <field name="TEXT">System's status is: </field>
+                              </shadow>
+                            </value>
+                            <value name="ADD1">
+                              <shadow type="my_text">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="read_DB" id="M/q7#s7Uk4tnb}~^160T">
+                                <value name="Key">
+                                  <shadow type="my_text" id="2M-v,iB*iwTe~WP|y|.l">
+                                    <field name="TEXT">status</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="LineNumber">
+                          <shadow type="field_slider" id="#S}-11!#7w(7xy=e4B/s">
+                            <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                            <field name="FIELDNAME">0</field>
+                          </shadow>
+                        </value>
+                        <value name="Offset">
+                          <shadow type="field_slider" id="`[e7*MCSvUt(S88%GJ/!">
+                            <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                            <field name="FIELDNAME">0</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="DN,nj{c*K_?z|_y}9;6/">
+                            <mutation elseif="0" else="1"></mutation>
+                            <value name="IF0">
+                              <shadow type="logic_boolean">
+                                <field name="BOOL">TRUE</field>
+                              </shadow>
+                              <block type="logic_compare" id="W%d-fE}|c,dZyd{%Az70">
+                                <field name="OP">LTE</field>
+                                <value name="A">
+                                  <shadow type="math_number">
+                                    <field name="NUM">20</field>
+                                  </shadow>
+                                  <block type="read_sensor_ev3" id=";S`)C1hPJxYchEfO#D47">
+                                    <field name="sensor">2</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="*STH|ug4fcw|1?gZ[iyi">
+                                    <field name="NUM">10</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="write_DB" id="ef/7fT9@n2H+qtN!`tvS">
+                                <value name="Value">
+                                  <shadow type="math_number">
+                                    <field name="NUM">20</field>
+                                  </shadow>
+                                  <block type="my_text" id="!p3(ut#5E87zcJn^2W(e">
+                                    <field name="TEXT">ON</field>
+                                  </block>
+                                </value>
+                                <value name="Key">
+                                  <shadow type="my_text" id="mDmwla[yaGg73#675.Fr">
+                                    <field name="TEXT">Alarm</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="write_DB" id="sEbbIah(Wmy+8WRs`rmZ">
+                                    <value name="Value">
+                                      <shadow type="math_number">
+                                        <field name="NUM">20</field>
+                                      </shadow>
+                                      <block type="my_text" id="OSr%}Dujo*n5HueA/.08">
+                                        <field name="TEXT">OFF</field>
+                                      </block>
+                                    </value>
+                                    <value name="Key">
+                                      <shadow type="my_text" id="cdTA}k@Xs39i=C@tNKFk">
+                                        <field name="TEXT">status</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="lcd_text" id=",o^,pmbZvvgu-#?|VO0-" disabled="true">
+                                        <field name="Color">0</field>
+                                        <value name="TextInput">
+                                          <shadow type="my_text">
+                                            <field name="TEXT">hello</field>
+                                          </shadow>
+                                          <block type="my_variables_get_dynamic" id="2!n}Yp}k_2pz+07c*w8W">
+                                            <mutation blockstyle="Number"></mutation>
+                                            <field name="VAR" id="oUYXcTW!AywQEh+q4.YH" variabletype="Number">dist</field>
+                                          </block>
+                                        </value>
+                                        <value name="LineNumber">
+                                          <shadow type="field_slider" id=")/WLShg/.!5PfEW}Q8$*">
+                                            <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                                            <field name="FIELDNAME">1</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Offset">
+                                          <shadow type="field_slider" id="1yN)9:))8Pn?tslMIdht">
+                                            <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                                            <field name="FIELDNAME">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block type="lcd_text" id="Gj{49_OZ@|%dRy=4S+|4" disabled="true">
+                                <field name="Color">2</field>
+                                <value name="TextInput">
+                                  <shadow type="my_text">
+                                    <field name="TEXT">hello</field>
+                                  </shadow>
+                                  <block type="my_variables_get_dynamic" id="~vp=SR^D5N}zD2MOi9Yg">
+                                    <mutation blockstyle="Number"></mutation>
+                                    <field name="VAR" id="oUYXcTW!AywQEh+q4.YH" variabletype="Number">dist</field>
+                                  </block>
+                                </value>
+                                <value name="LineNumber">
+                                  <shadow type="field_slider" id="|vJC#B(tUGeF#)~t!8w,">
+                                    <mutation color="#7aa7ff" min="0" max="3"></mutation>
+                                    <field name="FIELDNAME">1</field>
+                                  </shadow>
+                                </value>
+                                <value name="Offset">
+                                  <shadow type="field_slider" id="9l[2MvQA97PyKv,kf,uJ">
+                                    <mutation color="#7aa7ff" min="0" max="19"></mutation>
+                                    <field name="FIELDNAME">0</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="start_block" id="Kw#*)o/3g_A9jx#884Am" x="-1875" y="1425">
+    <field name="task_name">task5</field>
+    <statement name="DO">
+      <block type="controls_whileUntilForever" id="ky2}0S?yNl0)GYg[*Azm">
+        <field name="MODE">FOREVER</field>
+        <statement name="DO">
+          <block type="change_DB" id="Tu=vY-8i#yC?*#!N@KpU">
+            <value name="Key">
+              <shadow type="my_text" id="UnL*bJ)1-=}VV;|xbL.a">
+                <field name="TEXT">day_sim</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="controls_if" id="sULkO)tdWTTuv~9,]bH%">
+                <value name="IF0">
+                  <shadow type="logic_boolean" id="$L^1F9HUb?YQj-eCc^-E">
+                    <field name="BOOL">TRUE</field>
+                  </shadow>
+                  <block type="logic_text_compare" id="M^+G60agxibh6c?o|)tF">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <shadow type="my_text" id="WxeYYzqimhnKg}{x=gCu">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="read_DB" id="NOgS$,@Op:w6lS?OT90p">
+                        <value name="Key">
+                          <shadow type="my_text" id="yODg5n#a^m1x[/0:%X7T">
+                            <field name="TEXT">day_sim</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="my_text" id="mtN7pe_Y@bCqNLlQ;!S4">
+                        <field name="TEXT">ON</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="write_DB" id="R^QL@aG.Uk{57=T%c!1u">
+                    <value name="Value">
+                      <shadow type="math_number">
+                        <field name="NUM">20</field>
+                      </shadow>
+                      <block type="my_text" id="FiI{}J81k8x}#Q@x@H(!">
+                        <field name="TEXT">OFF</field>
+                      </block>
+                    </value>
+                    <value name="Key">
+                      <shadow type="my_text" id="m0N5nr{Uf]CSg2m59k4^">
+                        <field name="TEXT">day_sim</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="wait" id="EYhN[lyn*c4/Nc^`uW~K">
+                        <field name="unit">ms</field>
+                        <value name="MilliSECONDS">
+                          <shadow type="math_number" id="DS=4Q:43Ye3RII9Yr#l9">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="playAudio" id="!nff(Rup8A|EEcHc^4dR">
+                            <field name="sound">dogbark1</field>
+                            <field name="Flag">0</field>
+                            <value name="Volume">
+                              <shadow type="field_slider" id="fYAQ+}(bTokOK:dz4-l,">
+                                <mutation color="#7070ff" min="0" max="100"></mutation>
+                                <field name="FIELDNAME">100</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="motor_ready" id="5#=+~WyfhnJ_hAo*j6+$" disabled="true" x="-2805" y="1605">
+    <next>
+      <block type="large_motor" id="LmqDZ%QTuzcXkGn|k0S@" disabled="true">
+        <field name="mode">LMotorRotOn</field>
+        <field name="port">B</field>
+        <field name="brake">FALSE</field>
+        <field name="complete">TRUE</field>
+        <value name="power">
+          <shadow type="field_slider" id="3Ph+m|M~C_lI_)kgQ7SS">
+            <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+            <field name="FIELDNAME">10</field>
+          </shadow>
+        </value>
+        <value name="degrees">
+          <shadow type="math_number" id="t{|~.Nl9:ZtyXK33[YUb">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="motor_ready" id=":0Ul0cT*vcQ^x62pSQ~5" disabled="true"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="large_motor" id="#XBwSc,[_}nQ9=efHkWv" disabled="true" x="-2757" y="1821">
+    <field name="mode">LMotorRotOn</field>
+    <field name="port">B</field>
+    <field name="brake">FALSE</field>
+    <field name="complete">TRUE</field>
+    <value name="power">
+      <shadow type="field_slider" id="OX+1}SFi9eVi|,5F]Lrd">
+        <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+        <field name="FIELDNAME">-10</field>
+      </shadow>
+    </value>
+    <value name="degrees">
+      <shadow type="math_number" id="+5?p%[V6xA;=!PLgY_P*">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="motor_ready" id="{q2)z%jpP*^=yi~Q=fP(" disabled="true">
+        <next>
+          <block type="large_motor" id="eHV/?|mIRrLMj1nnn`d+" disabled="true">
+            <field name="mode">LMotorSecOn</field>
+            <field name="port">A</field>
+            <field name="brake">FALSE</field>
+            <field name="complete">TRUE</field>
+            <value name="power">
+              <shadow type="field_slider" id="3B*{d5WiJfZ=sVyUq=k#">
+                <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                <field name="FIELDNAME">10</field>
+              </shadow>
+            </value>
+            <value name="degrees">
+              <shadow type="math_number" id="[B=]Y=mN:~/=2~U$;KSl">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="motor_ready" id="g!vK^*n$j|g`!rg{|YP`" disabled="true">
+                <next>
+                  <block type="large_motor" id="0NDREhn}H/Y/7l[,5kEY" disabled="true">
+                    <field name="mode">LMotorSecOn</field>
+                    <field name="port">A</field>
+                    <field name="brake">FALSE</field>
+                    <field name="complete">TRUE</field>
+                    <value name="power">
+                      <shadow type="field_slider" id="Fwdpp1Kq_o2Hh^lo;Ott">
+                        <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                        <field name="FIELDNAME">-5</field>
+                      </shadow>
+                    </value>
+                    <value name="degrees">
+                      <shadow type="math_number" id="Y.-m~K/2%%Q`zKY3fS5U">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="motor_ready" id="MUyCo%OH%8+nnwsJ7E@}" disabled="true">
+                        <next>
+                          <block type="large_motor" id="}Ptc7BU].wv#iB6i!Ltl" disabled="true">
+                            <field name="mode">LMotorSecOn</field>
+                            <field name="port">D</field>
+                            <field name="brake">FALSE</field>
+                            <field name="complete">TRUE</field>
+                            <value name="power">
+                              <shadow type="field_slider" id="kYY(r/00m$h7Pjv=:Mj-">
+                                <mutation color="#ff8c1a" min="-100" max="100"></mutation>
+                                <field name="FIELDNAME">10</field>
+                              </shadow>
+                            </value>
+                            <value name="degrees">
+                              <shadow type="math_number" id="7^@GUEsRDARM+wi.E.ED">
+                                <field name="NUM">5</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
